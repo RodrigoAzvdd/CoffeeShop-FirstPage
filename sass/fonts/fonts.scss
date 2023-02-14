@@ -1,0 +1,16 @@
+@font-face {
+    font-family: sodo-bold;
+    src: url("../../fonts/SoDoSans-Bold.woff");
+}
+@font-face {
+    font-family: sodo-regular;
+    src: url("../../fonts/SoDoSans-Regular.woff");
+}
+@font-face {
+    font-family: sodo-semiBold;
+    src: url("../../fonts/SoDoSans-SemiBold.woff");
+}
+
+$bold-font: sodo-bold;
+$regular-font: sodo-regular;
+$semiBold-font: sodo-semiBold;

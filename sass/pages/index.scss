@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    @include header-style(flex, space-between, center, 0px, 21px 38px);
+    box-shadow: 1px 1px 1px #bebebe;
+    min-height: 100px;
+}
+
+.hamburguer {
+    display: none;
+    max-width: 40px;
+}
+
+.nav-logo {
+    width: 51px;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-menu {
+    @include text-style(none, $text-color, 13px, sodo-bold);
+
+}
+
+.historias-logo {
+    width: 125px;
+}
+
+#find-store {
+    @include text-style(none, $text-color, 15px, sodo-semiBold);
+}
+
+#btn-login {
+    @include btn-style($text-color, transparent, 1px solid #000, 20px, 90px, 35px, sodo-semiBold, 17px);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(0.9);
+        background-color: #e0e0e0;
+        box-shadow: 0px 3px 10px #bebebe;
+    }
+}
+
+#btn-second-login {
+    @include btn-style(#fff, #000, 1px solid #000, 20px, 150px, 35px, sodo-semiBold, 16px);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(0.9);
+        box-shadow: 0px 3px 10px #bebebe;
+    }
+}
+
+.main-content {
+    padding-bottom: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.first-banner,
+.second-banner {
+    width: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: $primary-color;
+}
+
+.box-text {
+    text-align: center;
+    padding: 32px 48px;
+    @include text-style(none, #000, 20px, sodo-regular);
+}
+
+.btn-saibaMais {
+    @include btn-style(#000, transparent, 1px solid #000, 20px, 100px, 30px, sodo-semiBold, 15px);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(0.9);
+        background-color: #bdd1cb;
+        box-shadow: 0px 3px 10px #bebebe;
+    }
+}
+
+.footer {
+    padding: 4.8rem 4rem 3.2rem 131px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    box-shadow: 0px 0px 5px #bebebe;
+
+    a {
+        @include text-style(none, #868686, 15px, sodo-regular);
+
+    }
+
+    hr {
+        border: none;
+        background-color: #bebebe;
+        border: 1px solid #e5e5e5;
+    }
+}
+
+.first-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.seta-plus {
+    display: none;
+}
+
+.footer-item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    a {
+        &:hover {
+            color: #000
+        }
+    }
+}
+
+.main-text {
+    @include text-style(none, $text-color, 17px, sodo-semiBold);
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+
+    a {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.second-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.second-footer-terms {
+    display: flex;
+    gap: 15px;
+
+    a {
+        &:hover {
+            color: #000
+        }
+    }
+}
+
+.copyright-text {
+    @include text-style(none, #696969, 15px, sodo-regular);
+}
+
+@media (max-width: 1130px) {
+    #btn-second-login {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .footer {
+        padding: 32px 16px;
+    }
+
+    .header {
+        padding: 0px 16px;
+    }
+}
+
+@media (max-width: 934px) {
+    #btn-login {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .btn-menu,
+    .menu-right {
+        display: none;
+    }
+
+    .hamburguer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+
+        hr {
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 20px;
+            display: block;
+        }
+    }
+
+    .first-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        a {
+            display: none;
+        }
+    }
+
+    .seta-plus {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .seta-img {
+        width: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .text-content {
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .second-footer-terms {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        hr {
+            display: none;
+        }
+    }
+}

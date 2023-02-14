@@ -1,0 +1,25 @@
+@mixin header-style($display, $justify, $align, $gap, $padding) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    padding: $padding;
+}
+
+@mixin text-style($decoration, $color, $font-size, $font-family) {
+    text-decoration: $decoration;
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+@mixin btn-style($color, $background-color, $border, $border-radius, $width, $height, $font-family, $font-size) {
+    color: $color;
+    background-color: $background-color;
+    border: $border;
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+    font-family: $font-family;
+    font-size: $font-size;
+}
