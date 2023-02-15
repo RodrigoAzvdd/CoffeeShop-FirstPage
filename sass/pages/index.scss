@@ -34,7 +34,7 @@
 }
 
 .btn-menu {
-    @include text-style(none, $text-color, 13px, sodo-bold);
+    @include text-style(none, $text-color, 13px, $sodo-bold);
 
 }
 
@@ -43,11 +43,11 @@
 }
 
 #find-store {
-    @include text-style(none, $text-color, 15px, sodo-semiBold);
+    @include text-style(none, $text-color, 15px, $sodo-semiBold);
 }
 
 #btn-login {
-    @include btn-style($text-color, transparent, 1px solid #000, 20px, 90px, 35px, sodo-semiBold, 17px);
+    @include btn-style($text-color, transparent, 1px solid #000, 20px, 90px, 35px, $sodo-semiBold, 17px);
     cursor: pointer;
     transition: 0.3s;
 
@@ -59,7 +59,7 @@
 }
 
 #btn-second-login {
-    @include btn-style(#fff, #000, 1px solid #000, 20px, 150px, 35px, sodo-semiBold, 16px);
+    @include btn-style(#fff, #000, 1px solid #000, 20px, 150px, 35px, $sodo-semiBold, 16px);
     cursor: pointer;
     transition: 0.3s;
 
@@ -101,11 +101,11 @@
 .box-text {
     text-align: center;
     padding: 32px 48px;
-    @include text-style(none, #000, 20px, sodo-regular);
+    @include text-style(none, #000, 20px, $sodo-regular);
 }
 
 .btn-saibaMais {
-    @include btn-style(#000, transparent, 1px solid #000, 20px, 100px, 30px, sodo-semiBold, 15px);
+    @include btn-style(#000, transparent, 1px solid #000, 20px, 100px, 30px, $sodo-semiBold, 15px);
     cursor: pointer;
     transition: 0.3s;
 
@@ -124,7 +124,7 @@
     box-shadow: 0px 0px 5px #bebebe;
 
     a {
-        @include text-style(none, #868686, 15px, sodo-regular);
+        @include text-style(none, #868686, 15px, $sodo-regular);
 
     }
 
@@ -158,7 +158,7 @@
 }
 
 .main-text {
-    @include text-style(none, $text-color, 17px, sodo-semiBold);
+    @include text-style(none, $text-color, 17px, $sodo-semiBold);
 }
 
 .social-media {
@@ -193,7 +193,7 @@
 }
 
 .copyright-text {
-    @include text-style(none, #696969, 15px, sodo-regular);
+    @include text-style(none, #696969, 15px, $sodo-regular);
 }
 
 @media (max-width: 1130px) {
