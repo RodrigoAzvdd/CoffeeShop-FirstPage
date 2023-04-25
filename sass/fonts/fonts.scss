@@ -1,16 +1,9 @@
 @font-face {
-    font-family: sodo-bold;
-    src: url("../../fonts/SoDoSans-Bold.woff");
-}
-@font-face {
-    font-family: sodo-regular;
-    src: url("../../fonts/SoDoSans-Regular.woff");
-}
-@font-face {
-    font-family: sodo-semiBold;
-    src: url("../../fonts/SoDoSans-SemiBold.woff");
+    font-family: "SoDo Sans SemiBold";
+    src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot");
+    src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg");
 }
 
-$bold-font: sodo-bold;
-$regular-font: sodo-regular;
-$semiBold-font: sodo-semiBold;
+$bold-font: "SoDo Sans SemiBold";
+$regular-font: "SoDo Sans SemiBold";
+$semiBold-font: "SoDo Sans SemiBold";
