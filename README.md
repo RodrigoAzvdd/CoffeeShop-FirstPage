@@ -1,3 +1,2 @@
-# Clone-Starbucks-FirstPage
+# CoffeShop-FirstPage
 
-Recriando a pagina principal do Starbucks :)
