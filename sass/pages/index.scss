@@ -79,7 +79,7 @@
 }
 
 .nav-logo {
-    width: 51px;
+    width: 5rem;
 }
 
 .menu-left,
@@ -91,12 +91,10 @@
 }
 
 .btn-menu {
-    @include text-style(none, $text-color, 13px, $bold-font);
-
-}
-
-.historias-logo {
-    width: 125px;
+    @include text-style(none, $text-color, 1.1rem, $bold-font);
+    &:hover {
+        color: #D7976C
+    }
 }
 
 #find-store {
@@ -142,7 +140,7 @@
 
 .first-banner,
 .second-banner {
-    width: 100%;
+    width: 90rem;
 }
 
 .text-content {
@@ -151,8 +149,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 200px;
-    background-color: $primary-color;
+    height: 15rem;
+    background-color: #a08e82;
 }
 
 .box-text {
@@ -253,6 +251,12 @@
     @include text-style(none, #696969, 15px, $regular-font);
 }
 
+@media (max-width: 1440px) {
+    .first-banner,
+    .second-banner {
+        width: 100%;
+    }
+}
 @media (max-width: 1130px) {
     #btn-second-login {
         display: none;
