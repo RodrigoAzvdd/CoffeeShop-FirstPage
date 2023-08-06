@@ -140,7 +140,7 @@
 
 .first-banner,
 .second-banner {
-    width: 90rem;
+    width: 80rem;
 }
 
 .text-content {
@@ -148,7 +148,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80rem;
     height: 15rem;
     background-color: #a08e82;
 }
@@ -251,9 +251,10 @@
     @include text-style(none, #696969, 15px, $regular-font);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1285px) {
     .first-banner,
-    .second-banner {
+    .second-banner,
+    .text-content {
         width: 100%;
     }
 }
